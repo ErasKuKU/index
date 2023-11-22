@@ -10,20 +10,42 @@
     background-position: center;
     background-size:cover;
     position: relative;
+    
+    
 }
+
+
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 2% 6%; 
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    margin-left: -100px;
+    
 }
 nav img{
     width: 150px;
+    cursor: pointer;
+    padding-left: 50px;
 
 }
-.nav-links{
-    flex: 1;
-    text-align: right;
+ .clo{
+    display: none;
+}
+ .men{
+    display: none ; 
+    
+}
+
+
+.nav-links {
+   flex: 1;
+   text-align: right;
+    
 }
 .nav-links ul li{
     list-style: none;
@@ -31,9 +53,15 @@ nav img{
     padding: 8px 12px;
     position: relative;
 
+
 }
+a{
+    text-decoration: none;
+    color: #000;
+}
+
 .nav-links ul li a{
-    color: white;
+    color: #000;
     text-decoration: none;
     font-size: 13px;
     }
@@ -85,25 +113,12 @@ nav img{
         transition: 1s;
         background: #bd9c6c;
     }
-    @media(max-width: 700px){
-        .textbox h1{
-            font-size: 20px;
-        }
-        .nav-links ul li{
-            display: block;
-            }
-            .nav links{
-                position: absolute;
-                background: #f44336;
-                height: 100vh;
-                width: 200px;
-                top: 0;
-                right: 0;
-                text-align: left;
-                z-index: 2;
-            }
+   
+    
+    h9{
+        font-size: 36px;
+        font-weight: 600;
     }
-
     .course{
         width: 80%;
         margin: auto;
@@ -113,12 +128,14 @@ nav img{
     h1{
         font-size: 36px;
         font-weight: 600;
+       color: #2C2A58;
+    
         
     }
     p{
-        color: #777;
-        font-size: 14px;
-        font-weight: 300;
+        color: #BD9C6C;
+        font-size: 11px;
+        font-weight: 100;
         line-height: 22px;
         padding: 10px;
     }
@@ -143,7 +160,8 @@ nav img{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
-    color: #000;
+    color: #2C2A58;
+    font-size: 20px;
 
     }
     .course-col:hover{
@@ -186,16 +204,19 @@ nav img{
     
 
     .course{
-        padding: 8vw 8vw 0 8vw;
+        padding: 9vw 9vw 9vw 9vw;
         text-align: center;
+    
     }
+   
 
     .d{
         text-align: center;
-        font-size: 17px;
+        font-size: 13px;
         margin: 10px 0;
-         color: #777;
+         color: #000;
          font-weight: lighter;
+        
     }
    #course .courses{
     text-align: start;
@@ -214,6 +235,7 @@ nav img{
     
     .courses{
         padding: 30px 15px 0 30px;
+        transition: 1s;
     }
     .courses .details i{
         color: #fdc93b;
@@ -221,40 +243,53 @@ nav img{
     }
     span{
         color: #777;
-        font-size: 12px;
-        font-weight: 100;
+        font-size: 9px;
+        font-weight: 300;
     }
+   
+    
     h5{
-        font-size: 20px;
+       color: #2C2A58;
     }
     .coursebox{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        margin-top: 50px;
+        margin-top: 30px;
+        padding: 8vw 8vw 8vw;
+    
     }
     .courses img{
         width:  100%;
         height:  100%;
-    
+        
     }
+    
   
 
     .registration{
         padding: 6vw 8vw 6vw 8vw;
         background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('ssss.jpg');
-        width: 100%;
-        height: 100%;
+        padding-bottom: 40px;
        background-position: center;
        background-size:cover;
        position: relative;
         display: flex;
         justify-content: space-between;
+        
       
+     }
+     .course h3{
+        color: #2C2A58;
      }
     .reminder{
         color: #fff;
     }
     .reminder h1{
+        color: #bd9c6c;
+    }
+    .reminder p{
+        font-size: 35px;
+        color: #fff;
         color: #fff;
     }
     .reminder .time{
@@ -269,8 +304,8 @@ nav img{
         box-shadow: 0, 8px, 32px, o rgba(31, 38, 135, 0.37);
         border-radius: 5px;
         margin: 0 5px 10px 5px;
-        border: 1px solid rgba(255, 255, 255,0.18);
-        font-size: 1.1rem;
+        border: 1px solid #bd9c6c;
+        font-size: 15px;
         font-weight: 600;
     }
     .form{
@@ -284,7 +319,230 @@ nav img{
      .form input{
         margin: 15px 0;
         padding: 15px 10px;
-        border: 1px solid rgba(84, 40, 241);
+        border: 1px solid black;
         outline: none;
 
      }
+     .form a.blue{
+        background: #bd9c6c;
+        padding: 13px 35px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        transition: 0.3s ease;
+
+     }
+     .form a.blue:hover{
+        background: #fff;
+
+     }
+     .form .input::placeholder{
+        color: #413c3c;
+        font-weight: 500;
+        font-size: 0.9rem;
+     }
+     .reg{
+        
+    background: #BD9C6C;
+    line-height: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    color: #000;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    position: relative;
+    font-size: 12px;
+     }
+     .box{
+        height: 40px;
+        box-sizing: border-box;
+     }
+
+     
+    footer{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+        background-color:  #2C2A58;
+        display: flex;
+        justify-content: space-between;
+        height: 600px;
+      
+     }
+     footer .footer-col{
+        padding-bottom: 40px;
+     }
+     footer .footer-col{
+        color: #777;
+        font-size: 12px;
+        }
+        footer h11{
+            color: #fff;
+            
+            }
+       footer li{
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            line-height: 55px;
+            list-style: none;
+            cursor: pointer;
+            transform: 0.4s;
+        }
+        
+        footer li:hover{
+            color: #BD9C6C;
+        }
+        footer .subscribe{
+            margin-top: 20px;
+        }
+
+        footer input{
+            width: 220px;
+            padding: 15px 12px;
+            border: none;
+            outline: none;
+        }
+        footer .subscribe a{
+            color: #fff;
+            background: #BD9C6C;
+            padding: 12px 15px;
+            transition: 0.3s ease;
+            font-size: 0.9rem;
+
+        }
+        footer .subscribe a:hover{
+            color: white;
+            background: #bd9c6c;
+            }
+
+         footer .copyright{
+            margin-top: 20px;
+            
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            
+         }
+         @media(max-width:756px){ 
+            nav{
+                padding: 15px 20px;
+            }
+            nav img{
+                width: 130px;
+            }
+            .clo{
+                display: initial;
+                font-size: 1.6rem;
+                color: #fff;
+                padding: 10px 0 20px 20px;
+            }
+             .men{
+                display: initial; 
+            }
+            nav .nav-links ul{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                top: 0;
+                right: -240px;
+                width: 230px;
+                background-color: rgba(17, 20, 104, 0.45);
+                backdrop-filter: blur(4.5px);
+                border: 1px solid rgba(255,255,255,0.18);
+                height: 100vh;
+                transition: 0.3s ease;
+
+            }
+            nav .nav-links ul .active{
+                right: 0;
+            }
+            nav .nav-links ul li{
+                padding: 20px 0 20px 40px;
+                margin-left: 0;
+
+            }
+            .course-col {
+                padding: 8vw, 4vw, 0, 4vw;
+                text-align: center;
+         }
+         .coursebox {
+            padding: 8vw, 4vw, 0, 4vw;
+         }
+         .registration{
+            padding: 6vw 8vw 6vw 8vw;
+         }
+          
+        }
+
+       .about-header{
+        min-height: 70vh;
+        background-position: center;
+        background-size:cover;
+        position: relative;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('la.jpg');
+        width: 100%;
+       }
+        .Welcome{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .bot{
+            margin-bottom: 100px;
+           
+        }
+        .content p{
+            color: #777;
+            font-size: 12px;
+            margin-top: 10px;
+            justify-content: center;
+            display: flex;
+            text-align: justify;
+
+        }
+        
+        .sub p{
+            color: #777;
+            font-size: 12px;
+            margin-top: -10px;
+            
+        }
+        
+        .col-1 p{
+            margin-top: -20px;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            
+        }
+        .col-l{
+            display: flex;
+            align-items: center;
+            justify-self: center;
+
+        }  
+        
+        .subp1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .im{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh;
+            width: 100%;
+        }
+       .vid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+       }
+         
