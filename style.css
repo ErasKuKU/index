@@ -545,4 +545,20 @@ a{
         align-items: center;
         margin-bottom: 30px;
        }
-         
+    .contact-us{
+        
+        height: 250px;
+        background-color: #777;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .boxx{
+      width: 150px;
+      height: 150px;
+      border: 1px solid #2C2A58;
+
+
+    }
